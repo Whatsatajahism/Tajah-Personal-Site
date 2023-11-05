@@ -1,0 +1,99 @@
+
+/* applies to all default content */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom right, orange, fuchsia);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* header content starts here*/
+
+header > div{
+    display: flex;
+    justify-content: center;
+}
+
+.tajah-title{
+    color: white;
+}
+/* header content stops here */
+
+/*button code only*/
+.button-navbar{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 10px;
+
+}
+
+.button{
+    font-size: 16px;
+    padding: 15px 30px;
+    background-color: fuchsia;
+    border: 2px solid orangered;
+    border-radius: 5%;
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.button:hover {
+    background-color: orangered;
+    color: white;
+  }
+/*button code ends here*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr)); 
+    gap: 2rem; 
+    margin: 20px;
+    justify-content: center; 
+    align-items: center; 
+    
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+
+
+@media (max-width: 680px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .button-navbar{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
