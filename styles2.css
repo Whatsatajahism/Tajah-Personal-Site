@@ -21,6 +21,10 @@ header > div{
 .tajah-title{
     color: white;
 }
+
+.h2{
+    text-align: center;
+}
 /* header content stops here */
 
 /*button code only*/
@@ -52,6 +56,8 @@ header > div{
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: repeat(3, minmax(0, 1fr)); 
+    width: 900px;
+    max-width: 80%;
     gap: 2rem; 
     margin: 20px;
     justify-content: center; 
@@ -69,11 +75,15 @@ header > div{
 
 
 
-@media (max-width: 680px) {
+@media (min-width: 481px) and (max-width: 980px){
     .grid-container{
-        display: flex;
+        /* display: flex;
         flex-direction: column;
-        height: 100%;
+        gap: 40px;
+        height: 100%; */
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
     }
 
     .button-navbar{
@@ -82,18 +92,9 @@ header > div{
         gap: 30px;
     
     }
-    .footer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
   }
 
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
